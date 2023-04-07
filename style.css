@@ -169,7 +169,7 @@ section .imageContent img {
 }
 .cards .left-part--content {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0%;
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@ section .imageContent img {
 }
 .cards .right-part--content {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0%;
   display: flex;
   justify-content: center;
