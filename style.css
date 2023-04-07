@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+header nav {
+  position: relative;
+  height: 120px;
+  width: 100%;
+  padding: 0 24px;
+  z-index: 100;
+}
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 16px;
+}
+header nav ul li a {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+header nav ul li a.contact {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(212, 27%, 19%);
+  font-size: 18px;
+  border-radius: 36px;
+  padding: 12px 28px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+header .banner {
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Fraunces", serif;
+}
+header .banner_content {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -55px;
+  left: 0;
+}
+header .banner_content h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 64px;
+  letter-spacing: 8px;
+  padding-bottom: 20px;
+}
+
+section .textContent {
+  padding: 18px 112px;
+  width: 50%;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+section .textContent h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: hsl(212, 27%, 19%);
+}
+section .textContent p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: hsl(232, 10%, 55%);
+  line-height: 28px;
+}
+section .textContent h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 700;
+  position: relative;
+  padding-top: 14px;
+}
+section .textContent h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 100%;
+  background: hsl(51, 100%, 49%);
+  z-index: -1;
+  border-radius: 2px;
+  opacity: 40%;
+}
+section .textContent h5.textContent__pink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 100%;
+  background: hsl(7, 99%, 70%);
+  z-index: -1;
+  border-radius: 2px;
+  opacity: 40%;
+}
+section .imageContent {
+  width: 50%;
+}
+section .imageContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards .left-part {
+  position: relative;
+  width: 50%;
+}
+.cards .left-part--content {
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0 140px;
+  gap: 20px;
+}
+.cards .left-part--content h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+.cards .left-part--content p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: hsl(213, 9%, 39%);
+  line-height: 28px;
+}
+.cards .right-part {
+  width: 50%;
+  position: relative;
+}
+.cards .right-part--content {
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0 140px;
+  gap: 20px;
+}
+.cards .right-part--content h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+.cards .right-part--content p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: hsl(213, 9%, 39%);
+  line-height: 28px;
+}
+
+/*# sourceMappingURL=style.css.map */
