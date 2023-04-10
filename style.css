@@ -90,7 +90,7 @@ header nav ul li {
 }
 header nav ul li a {
   font-size: 18px;
-  color: hsl(210, 4%, 67%);
+  color: hsl(0, 0%, 100%);
   text-transform: capitalize;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
@@ -165,11 +165,17 @@ header .banner__content h1 {
     gap: 40px;
     text-align: center;
   }
+  header nav ul li a {
+    color: hsl(210, 4%, 67%);
+  }
   header nav ul li a.contact {
     background-color: hsl(51, 100%, 49%);
   }
   header nav .hamburger {
     display: block;
+  }
+  header .banner {
+    background-image: url("../../images/mobile/image-header.jpg");
   }
   header .banner__content h1 {
     font-size: 32px;

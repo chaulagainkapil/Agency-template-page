@@ -1,58 +1,57 @@
-.clients{
-    flex-direction: column;
-    padding: 80px 80px;
-    h2{
-        text-transform: uppercase;
-        font-family: $font_fraunces;
-        letter-spacing: 4px;
-        font-weight: $font_bold;
-        color: $dark_gray_blue;
-        padding: 20px 0;
+.clients {
+  flex-direction: column;
+  padding: 80px 80px;
+  h2 {
+    text-transform: uppercase;
+    font-family: $font_fraunces;
+    letter-spacing: 4px;
+    font-weight: $font_bold;
+    color: $dark_gray_blue;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  &__container {
+    padding: 80px 0;
+    gap: 20px;
+    &--person {
+      flex-direction: column;
+      img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 40px;
+      }
+      p {
+        text-align: center;
+        font-family: $font_barlow;
+        font-weight: $font_semibold;
+        color: $very_gray_blue;
+        line-height: 28px;
+      }
+      h5 {
+        padding-top: 40px;
         font-size: 18px;
+        font-weight: $font_bold;
+        font-family: $font_fraunces;
+        color: $dark_blue;
+      }
+      h6 {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: $font_semibold;
+        color: $dark_gray_blue;
+        font-family: $font_barlow;
+      }
     }
-    &__container{
-        padding: 80px 0;
-        gap: 20px;
-        &--person{
-            flex-direction: column;
-            img{
-                border-radius: 50%;
-                width: 80px;
-                height: 80px;
-                object-fit: contain;
-                margin-bottom: 40px;
-            }
-            p{
-                text-align: center;
-                font-family: $font_barlow;
-                font-weight: $font_semibold;
-                color: $very_gray_blue;
-                line-height: 28px;
-            }
-            h5{
-                padding-top: 40px;
-                font-size: 18px;
-                font-weight: $font_bold;
-                font-family: $font_fraunces;
-                color: $dark_blue;
-            }
-            h6{
-                padding-top: 10px;
-                font-size: 14px;
-                font-weight: $font_semibold;
-                color: $dark_gray_blue;
-                font-family: $font_barlow;
-            }
-
-        }
-    }
+  }
 }
-@media screen and (max-width:650px) {
-    .clients{
-        padding: 40px 40px;
-        &__container{
-            flex-direction: column;
-            gap: 80px;
-        }
+@media screen and (max-width: 650px) {
+  .clients {
+    padding: 40px 40px;
+    &__container {
+      flex-direction: column;
+      gap: 80px;
     }
+  }
 }

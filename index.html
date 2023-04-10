@@ -1,155 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Sunnyside agency landing page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header>
-    <nav class="flex">
-      <div class="logo">
-        <a href="#"><img src="./images/logo.svg" alt="logo"></a>
-      </div>
-      <!-- <div class="triangle-bottomright" id="triang"></div> -->
-      <ul id="navlinks">
-        <li id="navitems"><a href="#">about</a></li>
-        <li id="navitems"><a href="#">services</a></li>
-        <li id="navitems"><a href="#">projects</a></li>
-        <li id="navitems"><a href="#" class="contact">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger" onclick="show()">
-        <img src="./images/icon-hamburger.svg" alt="hamburger icon">
-      </div>
-      
-    </nav>
-
-    <div class="banner">
-      <div class="banner__content">
-        <h1>We are creatives</h1>
-        <a href="#main-id"><img src="./images/icon-arrow-down.svg" alt="downarrow"></a>
-      </div>
-     
-    </div>
-  </header>
-
-  <main id="main-id">
-    <section class="cards flex-align colrev">
-      <div class="cards__textContent flex-align">
-        <h3>Transform your brand</h3>
-        <p>We are a full-service creative agency specializing in helping brands grow fast. 
-        Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <h5><a href="#">Learn more</a></h5>  
-      </div>
-      <div class="cards__imageContent">
-        <a href="./images/desktop/image-transform.jpg"><img src="./images/desktop/image-transform.jpg" alt=""></a>
-      </div>
-    </section>
-    <section class="cards flex-align">
-      <div class="cards__imageContent">
-        <a href="./images/desktop/image-stand-out.jpg"><img src="./images/desktop/image-stand-out.jpg" alt=""></a>
-      </div>
-      <div class="cards__textContent flex-align">
-        <h3>Stand out to the right audience </h3>
-        <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-        <h5 class="cards__textContent__pink"><a href="#">Learn More</a></h5>
-      </div>
-    </section>
-
-    <section class="cards2 flex-center">
-      <div class="cards2__leftpart">
-        <div class="cards2__leftpart--images">
-          <img  class="cards2__leftpart--images--image1" src="./images/desktop/image-graphic-design.jpg" alt="Cherry">
-          <img class="cards2__leftpart--images--image2" src="./images/mobile/image-graphic-design.jpg" alt="">
+    <title>Sunnyside agency landing page</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
         </div>
-        <div class="cards2__leftpart--content">
-          <h2>Graphic design</h2> 
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p> 
+        <!-- <div class="triangle-bottomright" id="triang"></div> -->
+        <ul id="navlinks">
+          <li id="navitems"><a href="#">about</a></li>
+          <li id="navitems"><a href="#">services</a></li>
+          <li id="navitems"><a href="#">projects</a></li>
+          <li id="navitems"><a href="#" class="contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="show()">
+          <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="banner__content">
+          <h1>We are creatives</h1>
+          <a href="#main-id"
+            ><img src="./images/icon-arrow-down.svg" alt="downarrow"
+          /></a>
         </div>
       </div>
-      <div class="cards2__rightpart">
-        <div class="cards2__rightpart--images">
-          <img class="cards2__rightpart--images--image1" src="./images/desktop/image-photography.jpg" alt="Orange">
-          <img class="cards2__rightpart--images--image2" src="./images/mobile/image-photography.jpg" alt="Orange">
-        </div>
-        <div class="cards2__rightpart--content">
-          <h2>Photography</h2>
-          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+    </header>
+
+    <main id="main-id">
+      <section class="cards flex-align colrev">
+        <div class="cards__textContent flex-align">
+          <h3>Transform your brand</h3>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
           </p>
+          <h5><a href="#">Learn more</a></h5>
         </div>
-      </div>
-    </section>
-  </main>
-  
-<section class="clients flex">
+        <div class="cards__imageContent">
+          <a href="./images/desktop/image-transform.jpg"
+            ><img src="./images/desktop/image-transform.jpg" alt=""
+          /></a>
+        </div>
+      </section>
+      <section class="cards flex-align">
+        <div class="cards__imageContent">
+          <a href="./images/desktop/image-stand-out.jpg"
+            ><img src="./images/desktop/image-stand-out.jpg" alt=""
+          /></a>
+        </div>
+        <div class="cards__textContent flex-align">
+          <h3>Stand out to the right audience</h3>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <h5 class="cards__textContent__pink"><a href="#">Learn More</a></h5>
+        </div>
+      </section>
+
+      <section class="cards2 flex-center">
+        <div class="cards2__leftpart">
+          <div class="cards2__leftpart--images">
+            <img
+              class="cards2__leftpart--images--image1"
+              src="./images/desktop/image-graphic-design.jpg"
+              alt="Cherry"
+            />
+            <img
+              class="cards2__leftpart--images--image2"
+              src="./images/mobile/image-graphic-design.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cards2__leftpart--content">
+            <h2>Graphic design</h2>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="cards2__rightpart">
+          <div class="cards2__rightpart--images">
+            <img
+              class="cards2__rightpart--images--image1"
+              src="./images/desktop/image-photography.jpg"
+              alt="Orange"
+            />
+            <img
+              class="cards2__rightpart--images--image2"
+              src="./images/mobile/image-photography.jpg"
+              alt="Orange"
+            />
+          </div>
+          <div class="cards2__rightpart--content">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="clients flex">
       <h2>Client testimonials</h2>
       <div class="clients__container flex">
         <div class="clients__container--person flex-center">
-          <img src="./images/image-emily.jpg" alt="Emily R.">
-          <p>  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          <img src="./images/image-emily.jpg" alt="Emily R." />
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
           </p>
           <h5>Emily R.</h5>
           <h6>Marketing Director</h6>
         </div>
         <div class="clients__container--person flex-center">
-          <img src="./images/image-thomas.jpg" alt="Thomas S.">
-          <p>  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          <img src="./images/image-thomas.jpg" alt="Thomas S." />
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
           </p>
           <h5>Thomas S.</h5>
           <h6>Chief Operating Officer</h6>
         </div>
         <div class="clients__container--person flex-center">
-          <img src="./images/image-jennie.jpg" alt="Jennie F.">
-          <p>  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          <img src="./images/image-jennie.jpg" alt="Jennie F." />
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
           </p>
           <h5>Jennie F.</h5>
           <h6>Business Owner</h6>
         </div>
       </div>
-  </section>
-  <div class="gallery">
-    <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
-    <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange">
-    <img src="./images/desktop/image-gallery-cone.jpg" alt="Cones">
-    <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugarcubes">
-  </div>
-  <footer>
-    <div class="footer__logo">
-      <img src="./images/logo cyan.svg" alt="logo">
+    </section>
+    <div class="gallery">
+      <img
+        src="./images/desktop/image-gallery-milkbottles.jpg"
+        alt="Milk bottles"
+      />
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange" />
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="Cones" />
+      <img
+        src="./images/desktop/image-gallery-sugarcubes.jpg"
+        alt="Sugarcubes"
+      />
     </div>
-    <div class="footer__list">
-      <div class="footer__list--item"><a href="#">About</a></div>
-      <div class="footer__list--item"><a href="#">Services</a></div>
-      <div class="footer__list--item"><a href="#">Projects</a></div>
-    </div>
-    <div class="footer__social">
-      <div class="footer__social--icons"><a href="#"><img src="./images/icon-facebook.svg" alt="Facebook"></a></div>
-      <div class="footer__social--icons"><a href="#"><img src="./images/icon-instagram.svg" alt="Instagram"></a></div>
-      <div class="footer__social--icons"><a href="#"><img src="./images/icon-twitter.svg" alt="Twitter"></a></div>
-      <div class="footer__social--icons"><a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest"></a></div>
-    </div>
-  </footer>
+    <footer>
+      <div class="footer__logo">
+        <a href="#"><img src="./images/logo cyan.svg" alt="logo" /></a>
+      </div>
+      <div class="footer__list">
+        <div class="footer__list--item"><a href="#">About</a></div>
+        <div class="footer__list--item"><a href="#">Services</a></div>
+        <div class="footer__list--item"><a href="#">Projects</a></div>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social--icons">
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="Facebook"
+          /></a>
+        </div>
+        <div class="footer__social--icons">
+          <a href="#"
+            ><img src="./images/icon-instagram.svg" alt="Instagram"
+          /></a>
+        </div>
+        <div class="footer__social--icons">
+          <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" /></a>
+        </div>
+        <div class="footer__social--icons">
+          <a href="#"
+            ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
 
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <script>
-    const menu=document.getElementById("navlinks");
-    const hamburger=document.getElementById("hamburger");
-    function show(){
-      menu.style.display= menu.style.display ==="flex" ? "none" : "flex";
-    }
-  </script>
-</body>
+    <script>
+      const menu = document.getElementById("navlinks");
+      const hamburger = document.getElementById("hamburger");
+      function show() {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+  </body>
 </html>
