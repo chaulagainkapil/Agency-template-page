@@ -35,6 +35,9 @@ header {
           font-family: $font_fraunces;
           font-weight: $font_bold;
           text-transform: uppercase;
+          &:hover{
+            background-color: hsla(0, 0%, 100%, 0.5);
+          }
         }
       }
     }
@@ -105,7 +108,7 @@ header {
         display: none;
         position: absolute;
         flex-direction: column;
-        top: 130px;
+        top: 120px;
         left: 20px;
         width: 90%;
         background-color: white;
@@ -116,20 +119,19 @@ header {
         gap: 40px;
         text-align: center;
 
-        // &::before,
-        // &::after {
-        // content: '';
-        // position: absolute;
-        // bottom: 100%;
-        // right: 0px;
-        // border: 11px solid transparent;
-        // border-bottom-color: #dddddd;
-        // }
-        // &::after {
-        // right: 0px;
-        // border: 10px solid transparent;
-        // border-bottom-color: #ffffff;
-        // }
+        &::after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        width: 0px;
+        
+        bottom: 100%;
+        right: 0px;
+       border-top: 24px solid transparent;
+       border-right: 24px solid #fff;
+        
+        }
+        
 
         li {
           a {

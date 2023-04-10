@@ -62,14 +62,19 @@ footer .footer__list--item a {
   font-size: 18px;
   font-weight: 700;
 }
+footer .footer__list--item a:hover {
+  color: white;
+}
 footer .footer__social {
   display: flex;
   gap: 10px;
   padding: 40px 0;
 }
 footer .footer__social--icons img {
-  fill: hsl(167, 40%, 24%);
   cursor: pointer;
+}
+footer .footer__social--icons svg path:hover {
+  fill: white;
 }
 
 header {
@@ -104,6 +109,9 @@ header nav ul li a.contact {
   font-family: "Fraunces", serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+header nav ul li a.contact:hover {
+  background-color: hsla(0, 0%, 100%, 0.5);
 }
 header nav .hamburger {
   display: none;
@@ -154,7 +162,7 @@ header .banner__content h1 {
     display: none;
     position: absolute;
     flex-direction: column;
-    top: 130px;
+    top: 120px;
     left: 20px;
     width: 90%;
     background-color: white;
@@ -164,6 +172,16 @@ header .banner__content h1 {
     transition: 1s ease;
     gap: 40px;
     text-align: center;
+  }
+  header nav ul::after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    bottom: 100%;
+    right: 0px;
+    border-top: 24px solid transparent;
+    border-right: 24px solid #fff;
   }
   header nav ul li a {
     color: hsl(210, 4%, 67%);
