@@ -1,0 +1,9 @@
+.gallery{
+    display: flex;
+    width: 100%;
+    img{
+        width: 25%;
+        height: auto;
+        object-fit: contain;
+    }
+}
