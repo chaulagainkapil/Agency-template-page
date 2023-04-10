@@ -69,6 +69,7 @@ footer .footer__social {
 }
 footer .footer__social--icons img {
   fill: hsl(167, 40%, 24%);
+  cursor: pointer;
 }
 
 header {
@@ -89,7 +90,7 @@ header nav ul li {
 }
 header nav ul li a {
   font-size: 18px;
-  color: #fff;
+  color: hsl(210, 4%, 67%);
   text-transform: capitalize;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
@@ -97,12 +98,15 @@ header nav ul li a {
 header nav ul li a.contact {
   background-color: hsl(0, 0%, 100%);
   color: hsl(212, 27%, 19%);
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 36px;
   padding: 12px 28px;
   font-family: "Fraunces", serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+header nav .hamburger {
+  display: none;
 }
 header .banner {
   background-image: url("../../images/desktop/image-header.jpg");
@@ -120,14 +124,14 @@ header .banner {
   flex-direction: column;
   font-family: "Fraunces", serif;
 }
-header .banner_content {
+header .banner__content {
   display: block;
   text-align: center;
   position: relative;
   top: -55px;
   left: 0;
 }
-header .banner_content h1 {
+header .banner__content h1 {
   font-size: 64px;
   text-transform: uppercase;
   font-weight: 900;
@@ -137,26 +141,60 @@ header .banner_content h1 {
   padding-bottom: 20px;
 }
 
-section .textContent {
+@media screen and (max-width: 1024px) {
+  header {
+    height: 90vh;
+  }
+  header .banner {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  header nav ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 130px;
+    left: 20px;
+    width: 90%;
+    background-color: white;
+    padding: 50px 0;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s ease;
+    gap: 40px;
+    text-align: center;
+  }
+  header nav ul li a.contact {
+    background-color: hsl(51, 100%, 49%);
+  }
+  header nav .hamburger {
+    display: block;
+  }
+  header .banner__content h1 {
+    font-size: 32px;
+  }
+}
+.cards__textContent {
   padding: 18px 112px;
   width: 50%;
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
 }
-section .textContent h3 {
+.cards__textContent h3 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 48px;
   color: hsl(212, 27%, 19%);
 }
-section .textContent p {
+.cards__textContent p {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   color: hsl(232, 10%, 55%);
   line-height: 28px;
 }
-section .textContent h5 {
+.cards__textContent h5 {
   text-transform: uppercase;
   font-size: 16px;
   font-family: "Fraunces", serif;
@@ -165,7 +203,7 @@ section .textContent h5 {
   position: relative;
   padding-top: 14px;
 }
-section .textContent h5::after {
+.cards__textContent h5::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -177,7 +215,7 @@ section .textContent h5::after {
   border-radius: 2px;
   opacity: 40%;
 }
-section .textContent h5.textContent__pink::after {
+h5 .cards__textContent__textContent__pink::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -189,20 +227,29 @@ section .textContent h5.textContent__pink::after {
   border-radius: 2px;
   opacity: 40%;
 }
-section .imageContent {
+.cards__imageContent {
   width: 50%;
 }
-section .imageContent img {
+.cards__imageContent img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
-.cards .left-part {
+.cards2__leftpart {
   position: relative;
   width: 50%;
 }
-.cards .left-part--content {
+.cards2__leftpart img {
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: contain;
+}
+.cards2__leftpart--images--image2 {
+  display: none;
+}
+.cards2__leftpart--content {
   position: absolute;
   top: 20%;
   left: 0%;
@@ -215,23 +262,31 @@ section .imageContent img {
   padding: 0 140px;
   gap: 20px;
 }
-.cards .left-part--content h2 {
+.cards2__leftpart--content h2 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   color: hsl(212, 27%, 19%);
 }
-.cards .left-part--content p {
+.cards2__leftpart--content p {
   text-align: center;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   color: hsl(213, 9%, 39%);
   line-height: 28px;
 }
-.cards .right-part {
+.cards2__rightpart {
   width: 50%;
   position: relative;
 }
-.cards .right-part--content {
+.cards2__rightpart img {
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: contain;
+}
+.cards2__rightpart--images--image2 {
+  display: none;
+}
+.cards2__rightpart--content {
   position: absolute;
   top: 20%;
   left: 0%;
@@ -244,12 +299,12 @@ section .imageContent img {
   padding: 0 140px;
   gap: 20px;
 }
-.cards .right-part--content h2 {
+.cards2__rightpart--content h2 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   color: hsl(212, 27%, 19%);
 }
-.cards .right-part--content p {
+.cards2__rightpart--content p {
   text-align: center;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
@@ -257,9 +312,70 @@ section .imageContent img {
   line-height: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  .cards {
+    flex-direction: column;
+  }
+  .cards__textContent {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards__imageContent {
+    width: 100%;
+    height: 60vh;
+  }
+  .cards2 {
+    flex-direction: column;
+  }
+  .cards2__leftpart {
+    width: 100%;
+  }
+  .cards2__rightpart {
+    width: 100%;
+  }
+  .colrev {
+    flex-direction: column-reverse;
+  }
+  .colrev__leftpart {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  p {
+    font-size: 18px;
+  }
+  .cards__textContent {
+    padding: 18px 20px;
+    text-align: center;
+  }
+  .cards__textContent h3 {
+    font-size: 28px;
+  }
+  .cards2__leftpart--images--image2 {
+    display: block;
+  }
+  .cards2__leftpart--images--image1 {
+    display: none;
+  }
+  .cards2__leftpart--content {
+    padding: 0 20px;
+  }
+  .cards2__rightpart--images--image2 {
+    display: block;
+  }
+  .cards2__rightpart--images--image1 {
+    display: none;
+  }
+  .cards2__rightpart--content {
+    padding: 0 20px;
+  }
+}
 .gallery {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 .gallery img {
   width: 25%;
@@ -267,6 +383,14 @@ section .imageContent img {
   object-fit: contain;
 }
 
+@media screen and (max-width: 650px) {
+  .gallery {
+    width: auto;
+  }
+  .gallery img {
+    width: 50%;
+  }
+}
 .clients {
   flex-direction: column;
   padding: 80px 80px;
@@ -314,6 +438,16 @@ section .imageContent img {
   font-weight: 600;
   color: hsl(232, 10%, 55%);
   font-family: "Barlow", sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+  .clients {
+    padding: 40px 40px;
+  }
+  .clients__container {
+    flex-direction: column;
+    gap: 80px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

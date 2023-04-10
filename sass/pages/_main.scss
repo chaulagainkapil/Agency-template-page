@@ -1,5 +1,5 @@
-section{
-    .textContent{
+.cards{
+    &__textContent{
         padding: 18px 112px;
         width: 50%;
         flex-direction: column;
@@ -41,7 +41,7 @@ section{
           
         }
 
-        h5.textContent__pink{
+        h5 &__textContent__pink{
             &::after{
                 content: '';
                 position: absolute;
@@ -57,20 +57,30 @@ section{
         }
 
     }
-    .imageContent{
+    &__imageContent{
         width: 50%;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+            vertical-align: bottom;
         }
     }
 }
-.cards{
-    .left-part{
+.cards2{
+    &__leftpart{
         position: relative;
         width: 50%;
-
+        img{
+            vertical-align: bottom;
+            width: 100%;
+            object-fit: contain;
+        }
+        &--images{
+            &--image2{
+                display: none;
+            }
+        }
         &--content{
             position: absolute;
             top: 20%;
@@ -97,9 +107,19 @@ section{
             }
         }
     }
-    .right-part{
+    &__rightpart{
         width: 50%;
         position: relative;
+        img{
+            vertical-align: bottom;
+            width: 100%;
+            object-fit: contain;
+        }
+        &--images{
+            &--image2{
+                display: none;
+            }
+        }
         &--content{
             position: absolute;
             top:20%;
@@ -123,6 +143,79 @@ section{
                 font-weight: $font_semibold;
                 color: $very_gray_blue;
                 line-height: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cards{
+        flex-direction: column;
+        &__textContent{
+            width: 100%;
+            height: 60vh;
+            align-items: center;
+            justify-content: center;
+        }
+        &__imageContent{
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    .cards2{
+        flex-direction: column;
+        &__leftpart{
+            width: 100%;
+        }
+        &__rightpart{
+            width: 100%;
+        }
+    }
+    .colrev{
+        flex-direction: column-reverse;
+        &__leftpart{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    p{
+        font-size: 18px;
+    }
+    .cards{
+        &__textContent{
+            padding: 18px 20px;
+            text-align: center;
+            h3{
+                font-size: 28px;
+            }
+        }
+    }
+    .cards2{
+        &__leftpart{
+            &--images{
+                &--image2{
+                    display: block;
+                }
+                &--image1{
+                    display: none;
+                }
+            }
+            &--content{
+                padding: 0 20px;
+            }
+        }
+        &__rightpart{
+            &--images{
+                &--image2{
+                    display: block;
+                }
+                &--image1{
+                    display: none;
+                }
+            }
+            &--content{
+                padding: 0 20px;
             }
         }
     }

@@ -18,60 +18,70 @@
   <header>
     <nav class="flex">
       <div class="logo">
-        <img src="./images/logo.svg" alt="logo">
+        <a href="#"><img src="./images/logo.svg" alt="logo"></a>
       </div>
-      <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">services</a></li>
-        <li><a href="#">projects</a></li>
-        <li><a href="#" class="contact">Contact</a></li>
+      <!-- <div class="triangle-bottomright" id="triang"></div> -->
+      <ul id="navlinks">
+        <li id="navitems"><a href="#">about</a></li>
+        <li id="navitems"><a href="#">services</a></li>
+        <li id="navitems"><a href="#">projects</a></li>
+        <li id="navitems"><a href="#" class="contact">Contact</a></li>
       </ul>
+      <div class="hamburger" id="hamburger" onclick="show()">
+        <img src="./images/icon-hamburger.svg" alt="hamburger icon">
+      </div>
       
     </nav>
 
     <div class="banner">
-      <div class="banner_content">
+      <div class="banner__content">
         <h1>We are creatives</h1>
-        <img src="./images/icon-arrow-down.svg" alt="">
+        <a href="#main-id"><img src="./images/icon-arrow-down.svg" alt="downarrow"></a>
       </div>
      
     </div>
   </header>
 
-  <main>
-    <section class="cards flex-align">
-      <div class="textContent flex-align">
+  <main id="main-id">
+    <section class="cards flex-align colrev">
+      <div class="cards__textContent flex-align">
         <h3>Transform your brand</h3>
         <p>We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
         <h5><a href="#">Learn more</a></h5>  
       </div>
-      <div class="imageContent">
+      <div class="cards__imageContent">
         <a href="./images/desktop/image-transform.jpg"><img src="./images/desktop/image-transform.jpg" alt=""></a>
       </div>
     </section>
     <section class="cards flex-align">
-      <div class="imageContent">
+      <div class="cards__imageContent">
         <a href="./images/desktop/image-stand-out.jpg"><img src="./images/desktop/image-stand-out.jpg" alt=""></a>
       </div>
-      <div class="textContent flex-align">
+      <div class="cards__textContent flex-align">
         <h3>Stand out to the right audience </h3>
         <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-        <h5 class="textContent__pink"><a href="#">Learn More</a></h5>
+        <h5 class="cards__textContent__pink"><a href="#">Learn More</a></h5>
       </div>
     </section>
 
-    <section class="cards flex-center">
-      <div class="left-part">
-        <img  class="image" src="./images/desktop/image-graphic-design.jpg" alt="">
-        <div class="left-part--content">
+    <section class="cards2 flex-center">
+      <div class="cards2__leftpart">
+        <div class="cards2__leftpart--images">
+          <img  class="cards2__leftpart--images--image1" src="./images/desktop/image-graphic-design.jpg" alt="Cherry">
+          <img class="cards2__leftpart--images--image2" src="./images/mobile/image-graphic-design.jpg" alt="">
+        </div>
+        <div class="cards2__leftpart--content">
           <h2>Graphic design</h2> 
           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p> 
         </div>
       </div>
-      <div class="right-part">
-        <img class="image"  src="./images/desktop/image-photography.jpg" alt="">
-        <div class="right-part--content">
+      <div class="cards2__rightpart">
+        <div class="cards2__rightpart--images">
+          <img class="cards2__rightpart--images--image1" src="./images/desktop/image-photography.jpg" alt="Orange">
+          <img class="cards2__rightpart--images--image2" src="./images/mobile/image-photography.jpg" alt="Orange">
+        </div>
+        <div class="cards2__rightpart--content">
           <h2>Photography</h2>
           <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
           </p>
@@ -129,13 +139,17 @@
     </div>
   </footer>
 
-  
-
-  <!-- -->
-
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script>
+    const menu=document.getElementById("navlinks");
+    const hamburger=document.getElementById("hamburger");
+    function show(){
+      menu.style.display= menu.style.display ==="flex" ? "none" : "flex";
+    }
+  </script>
 </body>
 </html>

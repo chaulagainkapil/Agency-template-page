@@ -47,3 +47,12 @@
         }
     }
 }
+@media screen and (max-width:650px) {
+    .clients{
+        padding: 40px 40px;
+        &__container{
+            flex-direction: column;
+            gap: 80px;
+        }
+    }
+}

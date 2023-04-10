@@ -1,9 +1,18 @@
 .gallery{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     img{
         width: 25%;
         height: auto;
         object-fit: contain;
     }
+}
+@media screen and (max-width:650px) {
+.gallery{
+    width: auto;
+    img{
+        width: 50%;
+    }
+}
 }
