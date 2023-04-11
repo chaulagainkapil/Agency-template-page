@@ -47,8 +47,11 @@ footer {
 footer .footer__logo {
   padding: 20px 0;
 }
-footer .footer__logo img {
+footer .footer__logo svg {
   width: 175px;
+}
+footer .footer__logo svg path {
+  fill: hsl(167, 40%, 24%);
 }
 footer .footer__list {
   display: flex;

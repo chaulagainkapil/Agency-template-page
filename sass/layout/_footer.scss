@@ -8,8 +8,11 @@ footer {
   .footer {
     &__logo {
       padding: 20px 0;
-      img {
+      svg {
         width: 175px;
+        path{
+          fill: $deep_cyan;
+        }
       }
     }
     &__list {
